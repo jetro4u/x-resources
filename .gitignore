@@ -13,23 +13,6 @@ tweets
 .idea
 nbproject
 
-
-############################
-# Node.js
-############################
-
-lib-cov
-lcov.info
-pids
-logs
-results
-build
-dist
-node_modules
-.node_history
-package-lock.json
-
-
 coverage/
 *.log
 .DS_Store
