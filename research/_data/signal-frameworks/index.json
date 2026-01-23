@@ -1,0 +1,42 @@
+{
+    "title": "Signal Frameworks",
+    "description": "Comprehensive guides to X's engagement signals, scoring systems, and content optimization strategies",
+    "slug": "signal-frameworks",
+    "lastUpdated": "2026-01-23",
+    "geoScore": 92,
+    "sections": [
+      {
+        "id": "532-soccer-formation",
+        "title": "5-3-2 Soccer Formation Framework",
+        "description": "X's engagement architecture mapped to soccer tactics",
+        "slug": "532-soccer-formation",
+        "subsections": [
+          "overview",
+          "formation-roles",
+          "modifiers-and-guards",
+          "variants"
+        ]
+      },
+      {
+        "id": "signal-vs-spam",
+        "title": "Signal vs. Spam",
+        "description": "Distinguishing high-value signals from spam patterns",
+        "slug": "signal-vs-spam"
+      },
+      {
+        "id": "weighted-scoring-deep-dive",
+        "title": "Weighted Scoring Deep Dive",
+        "description": "Advanced analysis of X's multi-signal ranking system",
+        "slug": "weighted-scoring-deep-dive"
+      }
+    ],
+    "meta": {
+      "keywords": ["signal frameworks", "X algorithm", "engagement scoring", "spam detection", "soccer formation", "content optimization"],
+      "schemaType": "CollectionPage",
+      "conversational": true,
+      "entities": [
+        { "name": "X Algorithm", "url": "https://github.com/twitter/the-algorithm" },
+        { "name": "GEOCoLab", "url": "https://dndhubs.com/geocolab" }
+      ]
+    }
+}

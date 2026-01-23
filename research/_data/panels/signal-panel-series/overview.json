@@ -1,0 +1,105 @@
+{
+    "title": "Signal Panel Series",
+    "description": "Interactive expert panels dissecting X's algorithm, engagement strategies, and platform dynamics",
+    "slug": "signal-panel-series",
+    "lastUpdated": "2026-01-23",
+    "geoScore": 88,
+    "content": {
+      "introduction": {
+        "lead": "The Signal Panel Series brings together platform experts, growth strategists, and AI researchers to decode X's recommendation system through live discussions, case studies, and tactical workshops.",
+        "body": "Each season features 8-12 sessions covering algorithmic updates, emerging tactics, and real-world optimization experiments. Panelists include verified creators with 100K+ followers, X engineering alumni, and GEO specialists."
+      },
+      "sections": [
+        {
+          "heading": "Panel Format",
+          "content": null,
+          "type": "list",
+          "items": [
+            {
+              "title": "Weekly Sessions (90 min)",
+              "details": "Thursdays 2PM EST on X Spaces, with live Q&A and tactical breakdowns"
+            },
+            {
+              "title": "Expert Panelists (3-5 per session)",
+              "details": "Mix of creators, engineers, and analysts with proven X expertise"
+            },
+            {
+              "title": "Case Study Deep Dives",
+              "details": "Live analysis of viral posts, failed campaigns, and algorithmic anomalies"
+            },
+            {
+              "title": "Tactical Workshops",
+              "details": "Interactive exercises: signal audits, formation swaps, A/B test planning"
+            }
+          ]
+        },
+        {
+          "heading": "Season 1 Overview",
+          "content": "**Theme**: \"From Signals to Systems\" — Foundational algorithmic mechanics\n\n**Sessions**:\n- Session 1: The 5-3-2 Formation Revealed\n- Session 2: Reply Amplification Tactics\n- Session 3: SimClusters & Topical Authority\n- Session 4: Dwell Time Engineering\n- Session 5: Spam Defense Strategies\n- Session 6: Bookmark Optimization\n- Session 7: Formation Variants (4-4-2, 3-5-2)\n- Session 8: Season Wrap-Up & Live Audits\n\n**Participation**: Open to GEOCoLab Community tier (free); Pro/Premium tiers get post-session recordings + tactical templates.",
+          "type": "text"
+        },
+        {
+          "heading": "Panelist Criteria",
+          "content": null,
+          "type": "table",
+          "data": {
+            "headers": ["Role", "Requirements", "Contribution"],
+            "rows": [
+              ["Platform Expert", "100K+ followers, 2+ years X optimization", "Share real-world tactics, case studies"],
+              ["Engineer/Researcher", "ML background, algorithm analysis experience", "Explain technical mechanics, code reviews"],
+              ["Growth Strategist", "Managed 5+ brand accounts, proven ROI", "B2B/B2C playbooks, campaign breakdowns"],
+              ["Community Member", "Active GEOCoLab contributor, unique insights", "Fresh perspectives, experimental tactics"]
+            ]
+          }
+        },
+        {
+          "heading": "Engagement Model",
+          "content": null,
+          "type": "callout",
+          "variant": "info",
+          "items": [
+            "**Live Participation**: Submit questions via panel chat; top-voted questions addressed",
+            "**Async Recaps**: Session notes + key takeaways posted within 24 hours",
+            "**Tactical Templates**: Downloadable worksheets (e.g., Signal Audit Checklist)",
+            "**Community Experiments**: Panel-wide A/B tests with shared results"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Who should join the Signal Panel Series?",
+          "answer": "Creators, marketers, and analysts who want tactical X optimization strategies backed by algorithmic research. Ideal for those managing 10K+ follower accounts or brand campaigns."
+        },
+        {
+          "question": "Are sessions recorded?",
+          "answer": "Yes. Pro/Premium subscribers get access to recordings + transcripts + tactical templates within 24 hours. Community tier can join live only."
+        },
+        {
+          "question": "Can I become a panelist?",
+          "answer": "Submit your X profile + case study (via GEOCoLab contact form). We select panelists based on expertise, unique insights, and audience engagement."
+        }
+      ],
+      "relatedContent": [
+        {
+          "title": "Season 1 Timeline",
+          "slug": "season-1/timeline",
+          "category": "Panels"
+        },
+        {
+          "title": "Panelist Playbook",
+          "slug": "season-1/panelist-playbook",
+          "category": "Panels"
+        }
+      ]
+    },
+    "meta": {
+      "keywords": ["X panels", "signal analysis", "expert discussions", "algorithm optimization", "growth tactics", "X Spaces"],
+      "schemaType": "Event",
+      "conversational": true,
+      "entities": [
+        { "name": "GEOCoLab", "url": "https://dndhubs.com/geocolab" },
+        { "name": "X Spaces", "url": "https://help.x.com/en/using-x/spaces" }
+      ],
+      "readingTime": 6
+    }
+}

@@ -18,7 +18,7 @@ export interface NavigationItem {
    * Get research portal navigation structure
    * Future: Fetch from CMS or database
    */
-  export async function getResearchNavigation(): Promise<NavigationSection[]> {
+export async function getResearchNavigation(): Promise<NavigationSection[]> {
     return [
       {
         title: 'X Algorithm',
