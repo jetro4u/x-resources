@@ -426,6 +426,188 @@ export default function AuthorityIndex({ city, industry, rankings }) {
 
 ---
 
+Perfect. I’ll do this in **two clean deliverables**, designed so you can reuse them immediately across GEOCoLab, research, and X.
+
+---
+
+## 8. Repeatable Case-Study Template
+
+### *X Algorithm Soccer Formation Growth Blueprint*
+
+Use this **exact structure** for every future big-account analysis. It’s neutral, citable, and scalable.
+
+---
+
+### Title
+
+**{Creator Handle}’s X Growth Breakdown**
+*A Soccer Formation Signal Case Study ({Region / Niche})*
+
+---
+
+### Series Attribution
+
+> Part of the **X Algorithm Soccer Formation Growth Competition Blueprint** by **@geo_colab**
+> Profiles analyzed using signal-weighted, formation-based evaluation.
+
+---
+
+### Why This Case Matters
+
+* Why this creator is a **useful algorithmic specimen**
+* What makes the account **non-trivial** (region, niche density, timing, behavior)
+* What question this case answers (e.g. *Can depth beat scale?*)
+
+---
+
+### Context: X Algorithm Environment (Time-Bound)
+
+* Timeframe (e.g. 2026 For You system)
+* High-level pipeline assumptions:
+
+  * Sourcing
+  * ML Scoring (Phoenix)
+  * Filters & Gates
+  * Distribution / Expansion loops
+* What the algorithm currently rewards
+
+> Keep this stable across cases to allow comparisons.
+
+---
+
+### Creator Profile Snapshot
+
+* Handle:
+* Primary niches:
+* Follower count:
+* Audience composition (if known):
+* Cultural / topical clusters:
+
+---
+
+### The Problem (Pre-Intervention State)
+
+* What wasn’t working
+* Signal imbalance (likes-heavy, repost-heavy, shallow loops)
+* Observable symptoms:
+
+  * Low reply density
+  * In-network traps
+  * Weak OON expansion
+* Algorithm interpretation (low P(reply), low dwell, low embedding lift)
+
+---
+
+### Intervention: Formation Strategy Applied
+
+#### Formation Used
+
+**(e.g. 5:3:2+, 4:3:3+)**
+
+| Formation Role | Signals Used                      | Algorithm Effect     |
+| -------------- | --------------------------------- | -------------------- |
+| Attackers      | Replies, Bookmarks, Conversations | Satisfaction & depth |
+| Midfielders    | Quotes, Shares, Clicks            | Context expansion    |
+| Defenders      | Likes, Reposts                    | Legitimacy & safety  |
+| Modifiers      | Dwell, Views                      | Regret minimization  |
+
+---
+
+#### Tactical Execution
+
+* Posting cadence
+* Content coherence rules
+* Prompt design (questions, loops, pins)
+* Spam avoidance controls
+* Trust & toxicity management
+
+---
+
+### Results (Observed Outcomes)
+
+#### Short-Term (Post-Level)
+
+* Views
+* Replies
+* Bookmarks
+* Dwell proxies
+
+#### Windowed (7–14 days)
+
+* Total impressions
+* Avg engagement per post
+* Growth velocity
+
+#### Structural Gains
+
+* OON exposure
+* Heavy Ranker survival
+* Thread depth
+
+---
+
+### Algorithm Interpretation
+
+* What Phoenix likely inferred
+* Why distribution expanded (or consolidated)
+* Which signals crossed thresholds
+* Evidence of authority testing
+
+---
+
+### Lifetime Signal Review (If Available)
+
+#### High-Confidence Signals
+
+* Engagement rate
+* Replies
+* Bookmarks
+* Profile visits
+* Verified interactions
+
+#### Neutral Signals
+
+* Likes
+* Reposts
+
+#### Underdeveloped Signals
+
+* Shares
+* External propagation
+
+---
+
+### Improvement Plan (Formation-Aligned)
+
+* What to add
+* What to restrain
+* What to test next
+* Which formation variant fits the next phase
+
+---
+
+### Verdict
+
+**One-line algorithmic assessment**
+
+> Example:
+> *Algo-positive, depth-weighted, authority-building profile entering expansion readiness.*
+
+---
+
+### Transferable Learnings
+
+* What other creators can copy
+* What *not* to copy
+* Which signals matter most **in this niche**
+
+---
+
+That’s your **canonical case-study skeleton**. You can now analyze **any account** in 30–60 minutes using the same frame.
+
+---
+
+
 # FINAL SUMMARY
 
 You now have:

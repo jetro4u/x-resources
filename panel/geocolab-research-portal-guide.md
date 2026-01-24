@@ -15,7 +15,7 @@ This document outlines all generated content templates and components for the `/
 - `_data/signal-frameworks/532-soccer-formation/formation-roles.json` - Detailed role breakdowns
 
 #### Key Features:
-- **5-3-2 Soccer Formation Framework**: Maps X's algorithm to soccer tactics
+- **5-3-2-1+ Soccer Formation Framework**: Maps X's algorithm to soccer tactics
 - **Formation Roles**: Defender (spam gates), Midfielder (engagement), Forward (viral amplifiers)
 - **Tactical Tables**: Signal weights, formation variants, positioning strategies
 - **GEO Score**: 93-95 (highly optimized for search)

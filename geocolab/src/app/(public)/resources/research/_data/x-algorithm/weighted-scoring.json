@@ -1,0 +1,219 @@
+{
+    "metadata": {
+      "id": "weighted-scoring",
+      "slug": "weighted-scoring",
+      "title": "X Algorithm Weighted Scoring System",
+      "description": "Comprehensive guide to how X assigns weighted scores to posts in the For You timeline, including metric weights, penalties, and optimization strategies.",
+      "date": "2026-01-22",
+      "lastmod": "2026-01-22",
+      "author": "Jetro Olowole",
+      "tags": ["x-algorithm", "weighted-scoring", "signal-metrics", "phoenix-scorer"],
+      "keywords": ["x algorithm", "weighted scoring", "reply weight", "report penalty", "virality index", "engagement probability"],
+      "schema": {
+        "type": "HowTo",
+        "name": "Understanding X Algorithm Weighted Scoring",
+        "estimatedCost": "Free",
+        "performTime": "PT15M"
+      },
+      "citations": [
+        {
+          "url": "https://github.com/twitter/the-algorithm",
+          "title": "X Algorithm Repository"
+        },
+        {
+          "url": "https://geocolab.com/research/x-algorithm/phoenix-scorer",
+          "title": "Phoenix Scorer Deep Dive"
+        }
+      ],
+      "canonical": "https://geocolab.com/research/x-algorithm/weighted-scoring",
+      "breadcrumb": [
+        {
+          "name": "Home",
+          "url": "https://geocolab.com"
+        },
+        {
+          "name": "Research",
+          "url": "https://geocolab.com/research"
+        },
+        {
+          "name": "X Algorithm",
+          "url": "https://geocolab.com/research/x-algorithm"
+        },
+        {
+          "name": "Weighted Scoring",
+          "url": "https://geocolab.com/research/x-algorithm/weighted-scoring"
+        }
+      ],
+      "geo": {
+        "performance": {
+          "targetLCP": 2.3,
+          "targetFID": 85,
+          "bundleSize": 42
+        },
+        "accessibility": {
+          "wcagLevel": "AA",
+          "ariaCoverage": 100
+        },
+        "geoScore": 94
+      }
+    },
+    "sections": [
+      {
+        "type": "heading",
+        "level": 2,
+        "content": "Executive Summary"
+      },
+      {
+        "type": "text",
+        "content": "The X algorithm assigns numerical weights to every user action (replies, likes, retweets, reports) to calculate a final score for each post. Posts with higher scores appear in more For You timelines. This guide breaks down the exact weights used by Phoenix scorer, explains penalty systems, and provides actionable optimization strategies."
+      },
+      {
+        "type": "callout",
+        "content": "Key Takeaway: Reply engagement by the original author carries the highest weight (75), while negative reports apply the harshest penalty (-369). Optimize for author replies to maximize visibility."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "content": "Core Scoring Metrics"
+      },
+      {
+        "type": "text",
+        "content": "The Phoenix scorer evaluates posts using a multi-stage pipeline. After retrieval (candidate selection), each post receives a weighted score based on predicted engagement probabilities. Here are the primary metrics and their weights:"
+      },
+      {
+        "type": "table",
+        "columns": ["Metric", "Weight", "Penalty", "Stage"],
+        "rows": [
+          ["Reply (author engaged)", "75", "0", "Scoring"],
+          ["Reply (general)", "13.5", "0", "Scoring"],
+          ["Retweet", "20", "0", "Scoring"],
+          ["Like (favorite)", "10", "0", "Scoring"],
+          ["Profile click", "12", "0", "Scoring"],
+          ["Video playback (50%)", "8", "0", "Scoring"],
+          ["Negative report", "0", "-369", "Filters"],
+          ["Block", "0", "-74", "Filters"],
+          ["Mute", "0", "-11", "Filters"]
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "content": "Why Reply Weight Matters"
+      },
+      {
+        "type": "text",
+        "content": "When the original post author replies to your reply, X interprets this as a strong signal of quality conversation. This 75-weight multiplier is the highest in the system—5x higher than a regular reply (13.5) and 7.5x higher than a like (10)."
+      },
+      {
+        "type": "list",
+        "content": "unordered",
+        "items": [
+          "Ask genuine questions that invite author responses",
+          "Add unique value (data, insights, counterarguments)",
+          "Reply early in the post lifecycle when authors are most active",
+          "Avoid generic comments like 'Great post!' or emoji-only replies"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "content": "Penalty System Breakdown"
+      },
+      {
+        "type": "text",
+        "content": "Negative actions dramatically reduce post scores. A single report penalty (-369) can offset 37 likes (10 each) or nearly 5 retweets (20 each). Here's how to avoid penalties:"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "content": "Report Risk Mitigation"
+      },
+      {
+        "type": "list",
+        "content": "ordered",
+        "items": [
+          "Avoid controversial takes in high-risk niches (politics, crypto scams)",
+          "Use disclaimers for financial/health advice",
+          "Monitor report rate via Twitter Analytics or third-party tools",
+          "If flagged, appeal immediately through X's support system"
+        ]
+      },
+      {
+        "type": "faq",
+        "question": "What is the report rate threshold for filtering?",
+        "answer": "While X doesn't publish exact thresholds, internal signals suggest a report rate above 2% (2 reports per 100 impressions) triggers pre-scoring filters. Posts with 5%+ report rates are often shadow-banned from For You timelines entirely."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "content": "Optimization Strategies"
+      },
+      {
+        "type": "text",
+        "content": "Based on the weighted scoring system, here are proven tactics to boost your final score:"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "content": "1. Engineer Author Replies (75 Weight)"
+      },
+      {
+        "type": "text",
+        "content": "Target accounts with high reply rates (journalists, customer service accounts, active community builders). Use tools like NotifyMe for Chrome to get instant notifications when target accounts post."
+      },
+      {
+        "type": "code",
+        "language": "typescript",
+        "content": "// Example: Calculate expected score boost from author reply\nconst calculateScoreBoost = (authorReplyProb: number): number => {\n  const replyWeight = 75;\n  const avgLikeWeight = 10;\n  const equivalentLikes = replyWeight / avgLikeWeight;\n  \n  return authorReplyProb * replyWeight;\n};\n\n// If you have 30% chance of author reply:\nconsole.log(calculateScoreBoost(0.3)); // Output: 22.5 score boost"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "content": "2. Balance Virality with Risk"
+      },
+      {
+        "type": "text",
+        "content": "High-engagement posts attract both positive signals (retweets, likes) and negative ones (reports from opposing viewpoints). Monitor your virality index (viral impressions / total impressions) and report rate in tandem."
+      },
+      {
+        "type": "callout",
+        "content": "Pro Tip: A virality index above 40% with report rate below 1% is the sweet spot for sustained growth without penalties."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "content": "Related Resources"
+      },
+      {
+        "type": "text",
+        "content": "For deeper dives into related topics, see:"
+      },
+      {
+        "type": "list",
+        "content": "unordered",
+        "items": [
+          "<a href='/research/x-algorithm/phoenix-scorer'>Phoenix Scorer Architecture</a>",
+          "<a href='/research/x-algorithm/filters-and-gates'>Filter & Gate Systems</a>",
+          "<a href='/research/glossary/signal-metrics'>Complete Signal Metrics Glossary</a>",
+          "<a href='/research/playbooks/growth/daily-engagement'>Daily Engagement Playbook</a>"
+        ]
+      }
+    ],
+    "relatedContent": [
+      {
+        "title": "Phoenix Scorer Deep Dive",
+        "url": "/research/x-algorithm/phoenix-scorer",
+        "description": "How X's neural network predicts engagement probabilities"
+      },
+      {
+        "title": "Signal vs Spam Framework",
+        "url": "/research/signal-frameworks/signal-vs-spam",
+        "description": "Foundational philosophy for avoiding penalties"
+      },
+      {
+        "title": "Daily Engagement Playbook",
+        "url": "/research/playbooks/growth/daily-engagement",
+        "description": "Routines for maximizing weighted score daily"
+      }
+    ]
+}

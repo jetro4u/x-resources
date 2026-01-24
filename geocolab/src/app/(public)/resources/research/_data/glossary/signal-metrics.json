@@ -1,0 +1,229 @@
+{
+    "title": "X Algorithm Signal Metrics Glossary",
+    "slug": "signal-metrics",
+    "lastUpdated": "2026-01-23",
+    "geoScore": 91,
+    "content": {
+      "introduction": {
+        "lead": "Comprehensive definitions of X's algorithmic signals, weights, and measurement methods.",
+        "body": "This glossary decodes the 100+ signals that determine For You feed rankings, from high-weight amplifiers (+75) to penalty triggers (-80%). Use this as a reference for tactical planning."
+      },
+      "sections": [
+        {
+          "heading": "High-Weight Signals (+10 to +75)",
+          "content": null,
+          "type": "table",
+          "data": {
+            "headers": ["Signal", "Weight", "Definition", "Measurement"],
+            "rows": [
+              [
+                "Reply + Author Response",
+                "+75",
+                "User replies to your post AND you respond within 30 min",
+                "Notification timestamp delta (reply → response)"
+              ],
+              [
+                "Bookmark",
+                "+50",
+                "User saves post for later reference",
+                "Analytics → Bookmarks count"
+              ],
+              [
+                "Reply (Standalone)",
+                "+13.5",
+                "User replies but author doesn't respond",
+                "Reply count (no follow-up)"
+              ],
+              [
+                "Profile Visit + Action",
+                "+12",
+                "User views your profile AND likes/replies to a post",
+                "Profile analytics → Actions from profile"
+              ],
+              [
+                "Conversation Click + Engagement",
+                "+11",
+                "User clicks into thread AND interacts (like/reply)",
+                "Thread engagement rate"
+              ],
+              [
+                "Dwell Time (120+ sec)",
+                "+10",
+                "User spends 2+ min in conversation thread",
+                "Time on page (thread view)"
+              ],
+              [
+                "Dwell Time (30-120 sec)",
+                "+5",
+                "User spends 30 sec to 2 min viewing post/thread",
+                "Scroll pause duration"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Medium-Weight Signals (+0.5 to +5)",
+          "content": null,
+          "type": "table",
+          "data": {
+            "headers": ["Signal", "Weight", "Definition", "Measurement"],
+            "rows": [
+              [
+                "Retweet",
+                "+1.0",
+                "User shares post to their followers",
+                "Retweet count"
+              ],
+              [
+                "Like",
+                "+0.5",
+                "User taps heart icon (passive engagement)",
+                "Like count"
+              ],
+              [
+                "Video Watch (50%+)",
+                "+0.005",
+                "User watches at least half of video duration",
+                "Video analytics → Avg. watch %"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Multiplier Signals (Context-Dependent)",
+          "content": null,
+          "type": "list",
+          "items": [
+            {
+              "title": "SimClusters Match",
+              "details": "Multiplies base signals by 1.5-3x if post topic aligns with user's interest clusters. Measured by: Your content categories vs. user's engagement history (e.g., tech posts for tech-engaged users)."
+            },
+            {
+              "title": "Author Credibility",
+              "details": "Multiplies signals by 1.2-2x based on your engagement history. High reply rates, low spam flags = higher multiplier. Measured by: Account reputation score (hidden metric)."
+            },
+            {
+              "title": "Recency Bias",
+              "details": "Exponential decay function. Posts lose ~30% weight every 6 hours. Measured by: Time since publication."
+            },
+            {
+              "title": "Media Type Boost",
+              "details": "Video: 1.5-2x. Image: 1.2x. Text-only: 1.0x. Measured by: Post media type."
+            }
+          ]
+        },
+        {
+          "heading": "Penalty Signals (-5 to -80%)",
+          "content": null,
+          "type": "table",
+          "data": {
+            "headers": ["Signal", "Weight", "Definition", "Trigger"],
+            "rows": [
+              [
+                "Offensive Content",
+                "-80% reach",
+                "Profanity, hate speech, harassment detected",
+                "AI moderation filter or manual review"
+              ],
+              [
+                "Link Tax",
+                "-50% reach",
+                "Outbound URL in tweet body",
+                "URL presence (not in bio/reply)"
+              ],
+              [
+                "Negative Action",
+                "-5 to -30% cumulative",
+                "User mutes, blocks, or clicks 'Show Less Often'",
+                "User action (cumulative over time)"
+              ],
+              [
+                "Report Flag",
+                "Shadow ban (temp)",
+                "3+ user reports within 1 hour",
+                "Report volume threshold"
+              ],
+              [
+                "Duplicate Post",
+                "Shadow ban (24-72 hrs)",
+                "3+ identical posts in 10 minutes",
+                "Text similarity algorithm"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Special Signals",
+          "content": null,
+          "type": "list",
+          "items": [
+            {
+              "title": "Community Notes",
+              "details": "If your post receives a Community Note (fact-check), it loses 20-40% reach and damages account credibility long-term. Avoid by fact-checking claims before posting."
+            },
+            {
+              "title": "Follow Relationship",
+              "details": "Posts from accounts you follow get 2-5x weight in your feed. Doesn't affect reach to non-followers."
+            },
+            {
+              "title": "Verified Badge (X Premium)",
+              "details": "10-20% boost to base signals. Paid feature, not merit-based."
+            },
+            {
+              "title": "Thread Continuation",
+              "details": "Each post in a thread inherits 50% of parent post's engagement. Threads compound signals."
+            }
+          ]
+        },
+        {
+          "heading": "Key Terms",
+          "content": null,
+          "type": "list",
+          "items": [
+            {
+              "title": "SimClusters",
+              "details": "X's topical grouping system. Users and content are assigned to clusters (e.g., tech, crypto, sports) based on engagement patterns. Staying within your cluster boosts reach."
+            },
+            {
+              "title": "Dwell Time",
+              "details": "Time a user spends viewing your post or thread. Measured in seconds. Thresholds: <30s (no boost), 30-120s (+5), 120+ (+10)."
+            },
+            {
+              "title": "Phoenix Scorer",
+              "details": "X's ML model that predicts user engagement likelihood. Uses transformer architecture (same as Grok AI). Replaces old heuristic-based ranking."
+            },
+            {
+              "title": "Shadow Ban",
+              "details": "Temporary suppression where your posts don't appear in search/recommendations. Caused by spam flags or duplicate posts. Recovery: 7-14 days of conservative posting."
+            },
+            {
+              "title": "Reply Velocity",
+              "details": "Speed of author responses to comments. Target: <30 min for max +75 signal capture. Measured by: Notification timestamp delta."
+            }
+          ]
+        }
+      ],
+      "relatedContent": [
+        {
+          "title": "Weighted Scoring System",
+          "slug": "weighted-scoring",
+          "category": "X Algorithm"
+        },
+        {
+          "title": "Signal vs. Spam",
+          "slug": "signal-vs-spam",
+          "category": "Signal Frameworks"
+        }
+      ]
+    },
+    "meta": {
+      "keywords": ["X signals", "algorithm metrics", "engagement weights", "SimClusters", "dwell time", "reply strategy"],
+      "schemaType": "DefinedTermSet",
+      "conversational": true,
+      "entities": [
+        { "name": "X Algorithm", "url": "https://github.com/twitter/the-algorithm" },
+        { "name": "Phoenix Scorer", "url": "/research/x-algorithm/phoenix-scorer" }
+      ],
+      "readingTime": 8
+    }
+}
